@@ -1,6 +1,6 @@
 // LiquidityPool.move
 
-module 0x1::LiquidityPool {
+module my_addr::LiquidityPool {
 
     // Define a struct to represent the liquidity pool with the 'key' ability
     struct LiquidityPool has key {

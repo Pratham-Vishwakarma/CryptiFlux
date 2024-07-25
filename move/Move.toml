@@ -1,12 +1,12 @@
 [package]
-name = "dexapp"
+name = "move"
 version = "1.0.0"
 authors = []
 
 [addresses]
-send_message="0xdc8624d07a87bfac07636bbb7f71de815d066575b42e3c30e3482f9d91755f4a"
-
+my_addr="903f9346940a83dac717774850def813aea9558de6e2301b060a5b9460bb8c98"
 [dev-addresses]
+
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
