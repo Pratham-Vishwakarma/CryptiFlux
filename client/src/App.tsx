@@ -76,12 +76,12 @@ const DEXApp: React.FC = () => {
     };
 
     return (
-        <Layout style={{ minHeight: '100vh', background: '#4F1787' }}>
-            <Header style={{ backgroundColor: '#180161', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px' }}>
+        <Layout style={{ minHeight: '80vh', background: '#333333', width: '65%', marginLeft: '350px'}}>
+            <Header style={{ backgroundColor: '#333333', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px' }}>
                 <Title level={1} style={{ color: '#fff', margin: 0 }}>CryptiFlux</Title>
             </Header>
-            <Content style={{ padding: '50px' }}>
-                <Card style={{ marginBottom: '20px', backgroundColor: '#EB3678' }}>
+            <Content style={{ padding: '50px', borderRadius: '40px', backgroundColor: '#585858' }}>
+                <Card style={{ marginBottom: '20px', backgroundColor: '#858585', borderRadius: '15px' }}>
                     <Tabs defaultActiveKey="1" items={[
                         {
                             key: "1",
@@ -114,7 +114,7 @@ const DEXApp: React.FC = () => {
                                         onClick={initializePool}
                                         loading={transactionInProgress}
                                         block
-                                        style={{ backgroundColor: '#FB773C', borderColor: '#FB773C' }}
+                                        style={{ backgroundColor: '#1a1919', borderColor: '#1a1919' }}
                                     >
                                         Pool Token
                                     </Button>
@@ -135,27 +135,27 @@ const DEXApp: React.FC = () => {
                                             label: `User ${user.id}`
                                         }))}
                                     />
-                                    <Input
-                                        placeholder="Amount to Swap"
-                                        value={swapAmount}
-                                        onChange={(e) => setSwapAmount(e.target.value)}
-                                        style={{ marginBottom: '10px', width: 'calc(100% - 100px)', marginRight: '10px' }}
-                                    />
                                     <Select
                                         value={swapToken}
                                         onChange={(value) => setSwapToken(value as TokenType)}
-                                        style={{ width: '90px', marginBottom: '10px' }}
+                                        style={{ width: '120px', marginBottom: '10px' }}
                                         options={[
                                             { value: 'tokenA', label: 'Token A' },
                                             { value: 'tokenB', label: 'Token B' }
                                         ]}
+                                    />
+                                    <Input
+                                        placeholder="Amount to Swap"
+                                        value={swapAmount}
+                                        onChange={(e) => setSwapAmount(e.target.value)}
+                                        style={{ marginBottom: '10px', width: 'calc(100% - 130px)', marginLeft: '10px' }}
                                     />
                                     <Button
                                         type="primary"
                                         onClick={swapTokens}
                                         loading={transactionInProgress}
                                         block
-                                        style={{ backgroundColor: '#FB773C', borderColor: '#FB773C' }}
+                                        style={{ backgroundColor: '#1a1919', borderColor: '#1a1919' }}
                                     >
                                         Swap Tokens
                                     </Button>
@@ -166,7 +166,7 @@ const DEXApp: React.FC = () => {
                 </Card>
                 <Row gutter={[16, 16]}>
                     <Col span={12}>
-                        <Card title={<span style={{ color: '#fff' }}>Pool Status</span>} bordered={false} style={{ backgroundColor: '#EB3678' }}>
+                        <Card title={<span style={{ color: '#fff' }}>Pool Status</span>} bordered={false} style={{ backgroundColor: '#858585', borderRadius: '15px' }}>
                             {transactionInProgress ? (
                                 <Spin />
                             ) : (
@@ -178,7 +178,7 @@ const DEXApp: React.FC = () => {
                         </Card>
                     </Col>
                     <Col span={12}>
-                        <Card title={<span style={{ color: '#fff' }}>Users</span>} bordered={false} style={{ backgroundColor: '#EB3678' }}>
+                        <Card title={<span style={{ color: '#fff' }}>Users</span>} bordered={false} style={{ backgroundColor: '#858585', borderRadius: '15px' }}>
                             <Tabs items={users.map((user) => ({
                                 key: user.id.toString(),
                                 label: <span style={{ color: '#fff' }}>User {user.id}</span>,
@@ -193,7 +193,7 @@ const DEXApp: React.FC = () => {
                     </Col>
                 </Row>
             </Content>
-            <Footer style={{ textAlign: 'center', color: '#fff' }}>
+            <Footer style={{ textAlign: 'center', color: '#fff', backgroundColor: '#333333',  display: 'flex', justifyContent: 'center', marginTop: '30px' }}>
                 CryptiFlux ©2024 Created by Pratham Vishwakarma
             </Footer>
         </Layout>
