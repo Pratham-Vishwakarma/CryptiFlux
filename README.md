@@ -18,17 +18,13 @@ CryptiFlux is a decentralized exchange (DEX) application built with React and An
 
 ## Screenshots
 
-### Home Page
-
-*Include screenshots of the home page here*
-
 ### Pool Tokens
 
-*Include screenshots of the pool tokens page here*
+![Pool Image](images/Pool.png)
 
 ### Swap Tokens
 
-*Include screenshots of the swap tokens page here*
+![Swap Image](images/Swap.png)
 
 ## Getting Started
 
