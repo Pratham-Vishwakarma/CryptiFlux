@@ -1,4 +1,4 @@
-# CryptiFlux
+# <img src="client/public/logo.ico" alt="Logo" width="40"/>    CryptiFlux   
 
 CryptiFlux is a decentralized exchange (DEX) application built with React and Ant Design. It allows users to pool and swap tokens seamlessly on the Aptos blockchain. The application supports multiple users, token pooling, and token swapping with a simple and intuitive interface.
 
