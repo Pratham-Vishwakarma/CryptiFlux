@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./client/public/favicon.ico" alt="CryptiFlux Logo" width="120" height="120"/>
+  <img src="./images/logo.png" alt="CryptiFlux Logo" width="120" height="120"/>
 </p>
 <h1 align="center">CryptiFlux</h1>
 <p align="center"><em>Simulated Token Pooling & Swapping on Aptos</em></p>
@@ -12,7 +12,7 @@ CryptiFlux is a **React + TypeScript-based simulation platform** that allows use
 
 [![Stars](https://img.shields.io/github/stars/Pratham-Vishwakarma/CryptiFlux)](https://github.com/Pratham-Vishwakarma/CryptiFlux/stargazers)
 [![Forks](https://img.shields.io/github/forks/Pratham-Vishwakarma/CryptiFlux)](https://github.com/Pratham-Vishwakarma/CryptiFlux/network/members)
-[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/Pratham-Vishwakarma/CryptiFlux/blob/main/license.txt)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/Pratham-Vishwakarma/CryptiFlux/blob/main/LICENSE.md)
 [![Report Issue](https://img.shields.io/badge/Report%20Issue-red)](https://github.com/Pratham-Vishwakarma/CryptiFlux/issues)
 [![View Code](https://img.shields.io/badge/View%20Code-gray)](https://github.com/Pratham-Vishwakarma/CryptiFlux)
 
@@ -260,7 +260,7 @@ yarn build
 
 ## License
 
-CryptiFlux is licensed under the [MIT License](license.txt).
+CryptiFlux is licensed under the [MIT License](LICENSE.md).
 
 ## Support / Contact
 
