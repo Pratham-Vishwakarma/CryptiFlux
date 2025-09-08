@@ -1,0 +1,7 @@
+# Frontend (client)
+/client/node_modules
+
+# Backend ( move )
+/move/.aptos
+/move/build
+/move/.env
